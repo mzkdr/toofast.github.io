@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Animation</title>
+    <style>
+        body {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        #binary-text {
+            font-size: 24px;
+            color: #00ff00;
+            white-space: nowrap;
+            position: absolute;
+            animation: moveBinary 2s linear infinite; /* Adjust animation duration here */
+        }
+
+        @keyframes moveBinary {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="binary-text">
+        01000010010100110101000001000011010101000100011001111011011000100110100101101110011000010111001001111001010111110110110101101111011101100110100101101110011001110101111101100001011100100110111101110101011011100110010001011111011000100111010101110100010111110110110001101111011011110110101101011111011000010111010001011111011101000110100001100101010111110110001101101111011001000110010101111101
+    </div>
+</body>
+</html>
